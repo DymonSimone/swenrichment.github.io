@@ -4,67 +4,85 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SWEnrichment | Coding Tutoring Services</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <h1 class="logo">SWEnrichment</h1>
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+          <a class="navbar-brand" href="#">SWEnrichment</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+              <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
 
     <section id="hero">
-      <div class="hero-content">
+      <div class="container">
         <h2>Personalized Coding Tutoring</h2>
         <p>Empowering students to succeed in computer science courses and beyond.</p>
         <a href="#contact" class="cta-button">Book Your First Session</a>
       </div>
     </section>
 
-    <section id="about" class="section">
+    <section id="about" class="py-5">
       <div class="container">
         <h2>About SWEnrichment</h2>
         <p>SWEnrichment provides personalized coding tutoring for college students and beginners. Whether you're struggling with algorithms or just starting to code, our 1-on-1 sessions are tailored to your learning needs.</p>
       </div>
     </section>
 
-    <section id="services" class="section">
+    <section id="services" class="py-5 bg-light">
       <div class="container">
         <h2>Our Services</h2>
-        <div class="service-list">
-          <div class="service">
-            <h3>1-on-1 Tutoring</h3>
-            <p>Personalized sessions designed to help you understand complex computer science topics.</p>
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="service p-4">
+              <h3>1-on-1 Tutoring</h3>
+              <p>Personalized sessions designed to help you understand complex computer science topics.</p>
+            </div>
           </div>
-          <div class="service">
-            <h3>Group Classes</h3>
-            <p>Interactive small-group sessions focusing on coding fundamentals and problem-solving skills.</p>
+          <div class="col-md-4 mb-3">
+            <div class="service p-4">
+              <h3>Group Classes</h3>
+              <p>Interactive small-group sessions focusing on coding fundamentals and problem-solving skills.</p>
+            </div>
           </div>
-          <div class="service">
-            <h3>Exam Preparation</h3>
-            <p>Targeted guidance to help you ace your coding assessments and exams.</p>
+          <div class="col-md-4 mb-3">
+            <div class="service p-4">
+              <h3>Exam Preparation</h3>
+              <p>Targeted guidance to help you ace your coding assessments and exams.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="py-5">
       <div class="container">
         <h2>Contact Us</h2>
         <p>Ready to start your coding journey? Book a session today!</p>
-        <form action="https://formspree.io/f/mexample" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="How can we help you?" required></textarea>
-          <button type="submit">Send Message</button>
+        <form action="https://formspree.io/f/mexample" method="POST" class="mt-4">
+          <div class="mb-3">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" class="form-control" placeholder="Your Email" required />
+          </div>
+          <div class="mb-3">
+            <textarea name="message" class="form-control" placeholder="How can we help you?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
       </div>
     </section>
@@ -72,6 +90,8 @@
     <footer>
       <p>&copy; 2025 SWEnrichment. All rights reserved.</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
 
